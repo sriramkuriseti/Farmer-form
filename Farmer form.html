@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Former Details form</title>
+        <link ref="icon" href="farmer2.jpg" type="image/x-icon">
+    </head>
+    <body style="background: url(crop2.jpg) center center cover no-repeat fixed;" >
+     <h1 style="text-align:center;">FARMER DETAILS FORM</h1>
+
+
+     <form action="" target="_blank" method="get" novalidate>
+        <fieldset>
+         <legend>Personal Details of Farmer</legend>
+         <form action="" oninput="x.value=parseInt(fage.value)">
+          
+            <div style="border:2px solid red;border-top-radius: 10px;">
+            <label for="fname" >First Name:</label>
+            <input id="fname" type="text" placeholder="Enter farmer first name size(30)" size="30" maxlength="30" autocomplete="on" autofocus required><br><br>    
+            </div>
+
+            <label for="mname" >Middle Name:</label>
+            <input id="mname" type="text" placeholder="Enter farmer Middle name" maxlength="30" autocomplete="on"><br><br>
+
+            <label for="lname" >Last Name:</label>
+            <input id="lname" type="text" placeholder="Enter farmer Last name" maxlength="30" autocomplete="on" required><br><br>
+
+            <label for="fage" >Age:</label>
+            <input type="range" step="1" min="21" max="80" id="fage" value="30" required><output name="x">output:</output><br><br>
+
+            <label for="phno">Mobile Number:</label>
+            <input type="tel" id="phno" pattern="[6-9]{1}[0-9]{9}" required><br><br>
+
+            <label for="fmail">Email:</label>
+            <input type="email" id="fmail" required><br><br>
+
+            <textarea rows="5" cols="50">enter address of farmer</textarea>
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Crop details</legend>
+        <form>
+            <label for="cname">Crop name:</label>
+            <input list="clist">
+            <datalist id="clist">
+                <option>Paddy</option>
+                <option>Mirchi</option>
+                <option>Cotton</option>
+                <option>Wheet</option>
+                <option>corn</option>
+                <option>sunflower</option>
+                <option value="mango">Mango</option>
+            </datalist><br><br>
+
+
+            <label for="ccolor">Crop color:</label>
+            <input id="ccolor" type="color"><br><br>
+
+            <label for="session">Session:</label>
+            <select id="session" size="2" multiple>
+                <option>Rainy</option>
+                <option selected>Winter</option>
+                <option>Summer</option>
+            </select><br><br>
+
+            <label for="per">Period of Crop:</label>
+            <input type="number" id="per" min="2" max="7"><br><br>
+
+            <label for="sdate">Start date:</label>
+            <input type="date" id="sdate"><br><br>
+            
+            <label for="seedcom" >Seed company:</label>
+            <input type="text" id="seedcom"><br><br>
+
+            <label for="seedcomurl" >Seed company URL:</label>
+            <input type="url" id="seedcomurl"><br><br>
+
+            <label for="mgmonth">Magnified Month:</label>
+            <input type="month" id="smonth"><br><br>
+
+            <label for="inv">Investment:</label><br>
+            <input id="inv" type="radio" name="inv">10000-20000<br>
+            <input id="inv" type="radio" name="inv">20001-30000<br>
+            <input id="inv" type="radio" name="inv">30001-40000<br>
+            <input id="inv" type="radio" name="inv">40001-50000<br>
+            <input id="inv" type="radio" name="inv">50001-more<br><br>
+            
+            <label for="det">Investment details:</label>
+            <input id="det" type="file"><br><br>
+
+            <label for="act">Activities Done:</label><br>
+            <input type="checkbox" id="act" name="act1">Soil preparation<br>
+            <input type="checkbox" id="act" name="act1">Sowing<br>
+            <input type="checkbox" id="act" name="act1">Manuring<br>
+            <input type="checkbox" id="act" name="act1">Irrigation<br>
+            <input type="checkbox" id="act" name="act1">Weeding<br>
+            <input type="checkbox" id="act" name="act1">Harvesting<br>
+              
+        </form>
+    </fieldset>
+    <input type="submit" value="Submit" ><!--has to align center-->
+    <input type="reset" value="reset">
+ </form> 
+    </body>
+</html>
